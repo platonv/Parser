@@ -157,7 +157,7 @@ def pif_to_cfg_sequence(codes, file_name):
 
 if __name__ == '__main__':
     a = Parser('grammar.in')
-    seq = pif_to_cfg_sequence(init_codes('codes.in'), 'pif.in')
+    seq = pif_to_cfg_sequence(init_codes('codes.in'), 'pif2.in')
     a.parse(seq)
     if a.state == State.end:
         print 'SUCCESS!'
